@@ -60,17 +60,17 @@ the function default arguments are added as arguments to the
 	 (getvars (lambda (x) (cl-remove
 			       :var (nth 3 (car x))
 			       :test-not #'eql
-			       :key #'first ))))
+			       :key #'car))))
      (helm-build-sync-source "available source block functions"
        :candidates (mapcar
 		    (lambda (x) (cons (nth 5 x) `(,x)))
 		    ;; we use the org-babel-lob-ingest function to also add the
 		    ;; named src blocks in the present file to the existing
 		    ;; library of babel functions
-		    (concatenate 'list org-babel-library-of-babel
-				 (let ((org-babel-library-of-babel nil))
-				   (org-babel-lob-ingest)
-				   org-babel-library-of-babel)))
+		    (cl-concatenate 'list org-babel-library-of-babel
+				    (let ((org-babel-library-of-babel nil))
+				      (org-babel-lob-ingest)
+				      org-babel-library-of-babel)))
        :action `(("#+CALL statement" . (lambda (x)
 					 (insert
 					  (format "#+CALL: %s(%s)"
