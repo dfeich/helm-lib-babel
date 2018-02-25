@@ -2,7 +2,7 @@
 
 ;; Author: Derek Feichtinger <dfeich@gmail.com>
 ;; Keywords: convenience
-;; Package-Requires: (cl-lib helm (emacs "24.4"))
+;; Package-Requires: ((cl-lib "0.5") (helm "1.9.2") (emacs "24.4"))
 ;; Homepage: https://github.com/dfeich/helm-lib-babel.el
 ;; Version: 1.0
 
