@@ -43,14 +43,14 @@
 The available functions consist of all functions defined in the
 library of babel (q.v. `org-babel-library-of-babel',
 `org-babel-lob-ingest') as well as all the named source blocks
-found in the current file. The available actions include:
+found in the current file.  The available actions include:
 
-Insert a #+CALL: function. The CALL function arguments are pre-filled
+Insert a #+CALL: function.  The CALL function arguments are pre-filled
 with the function's default arguments.
 
 Insert a :post header argument for a source block
 
-Insert an `org-sbe' form usually used in table functions. Again,
+Insert an `org-sbe' form usually used in table functions.  Again,
 the function default arguments are added as arguments to the
 `org-sbe' call."
   (interactive)
