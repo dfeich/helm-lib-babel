@@ -2,7 +2,7 @@
 
 ;; Author: Derek Feichtinger <dfeich@gmail.com>
 ;; Keywords: convenience
-;; Package-Requires: ((cl-lib "0.5") (org "8") (emacs "24.3"))
+;; Package-Requires: ((cl-lib "0.5") (emacs "24.4"))
 ;; Homepage: https://github.com/dfeich/helm-lib-babel.el
 ;; Version: 1.0
 
@@ -31,6 +31,7 @@
 ;;; Code:
 (require 'helm)
 (require 'org)
+(require 'cl-lib)
 
 ;; Note: I cannot use lexical binding here since seemingly the lambdas which
 ;; I define below are handed over to helm and helm does not use lexical binding,
