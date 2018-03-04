@@ -1,15 +1,17 @@
 
 # Table of Contents
 
-1.  [helm-lib-babel](#orgcef7959)
-2.  [Installation](#org1195a91)
-3.  [Motivation](#org9af58ba)
+1.  [helm-lib-babel](#orgf025076)
+2.  [Installation](#org4d30e13)
+3.  [Motivation](#orgab6ec4d)
 
 
 
-<a id="orgcef7959"></a>
+<a id="orgf025076"></a>
 
 # helm-lib-babel
+
+![img](http://melpa.org/packages/helm-lib-babel-badge.svg)
 
 `helm-lib-babel` provides a convenient helm lookup function for
 org-mode's ability to use previously defined named source code
@@ -20,7 +22,7 @@ found in the current file and the user's library of babel.
 ![img](babel8.gif)
 
 
-<a id="org1195a91"></a>
+<a id="org4d30e13"></a>
 
 # Installation
 
@@ -38,7 +40,7 @@ only the named source blocks of the file you are currently visiting
 will be offered.
 
 
-<a id="org9af58ba"></a>
+<a id="orgab6ec4d"></a>
 
 # Motivation
 

@@ -13,6 +13,8 @@
 
 * helm-lib-babel
 
+  [[file:http://melpa.org/packages/helm-lib-babel-badge.svg]]
+
   =helm-lib-babel= provides a convenient helm lookup function for
   org-mode's ability to use previously defined named source code
   blocks like functions (typically inserted via a =#+CALL:=
