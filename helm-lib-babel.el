@@ -84,6 +84,9 @@ the function default arguments are added as arguments to the
 					       (insert
 						(format ":post %s(*this*)"
 							(funcall ,getname x)))))
+		 ("<<noweb>> reference" . (lambda (x)
+					    (insert
+					     (format "<<%s>>" (funcall ,getname x)))))
 		 ("org-sbe form" . (lambda (x)
 				     (insert
 				      (format
